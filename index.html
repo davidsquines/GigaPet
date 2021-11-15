@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Revenge of the Nugget
+      </h1>
+      <h2>
+        HELP ME DEFEAT MY MORTAL ENEMY..... CHICK-FIL-A
+      </h2>
+    </header>
+
+    <main>
+      <div class="items-container">
+        <section class="pet-image-container">
+          <div class="chicken-image"></div>
+        </section>
+        <section class="dashboard">
+          <h3 class="subtitle">
+            (Don't worry, the knife is plastic)
+          </h3>
+          <div>
+            Name: <strong><span class="name"></span></strong>
+          </div>
+          <div>
+            Weight: <strong><span class="weight"></span> pounds</strong>
+          </div>
+          <div>
+            Happiness:
+            <strong><span class="happiness"></span> Stabs per minute</strong>
+          </div>
+          <div class="button-container">
+            <audio id="eatAudio">
+                <source src="assets/audio/eateateat.mp3" type="audio/mpeg">
+                browser doees not support audio
+            </audio>
+            <button class="treat-button" type="button" onClick="playEatAudio()">
+              Treat
+            </button>
+            <audio id="playAudio">
+              <source src="assets/audio/play.mp3" type="audio/mpeg">
+              browser doees not support audio
+            </audio>
+            <button class="play-button" type="button" onClick="playPlayAudio()">
+              Play
+            </button>
+            <audio id="exerciseAudio">
+              <source src="assets/audio/powerup.mp3" type="audio/mpeg">
+              browser doees not support audio
+            </audio>
+            <button class="exercise-button" type="button" onClick="playExerciseAudio()">
+              Exercise
+            </button>
+            <audio id="powerUpAudio">
+              <source src="assets/audio/exercise.mp3" type="audio/mpeg">
+              browser doees not support audio
+            </audio>
+            <button class="power-up-button" type="button" onClick="playPowerUpAudio()">
+              POWER UP
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

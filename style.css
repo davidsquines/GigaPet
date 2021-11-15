@@ -1,0 +1,128 @@
+
+* {
+    box-sizing: border-box;
+    background: green;
+
+   
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 25px;
+
+    
+  }
+  
+  main {
+    display:flex;
+    height:175px;
+    justify-content: center;
+  }
+  
+  header {
+  
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: white;
+  }
+
+  h3{
+    border: 1px solid #8A2BE2;
+    background: #8A2BE2;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 25px;
+
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  p {
+    max-width: 600px;
+  }
+  
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    padding-top: 25px;
+    border-top: 1px solid black;
+  }
+  
+  footer a {
+    float:left;
+    margin:5px;
+  }
+  
+  
+  .dashboard div {
+    display:block;
+  }
+  
+  .pet-image-container {
+    padding: 100px
+    
+  }
+
+  .dashboard {
+    padding:20px;
+    
+  }
+  
+  .button-container {
+    margin-top:20px;
+  }
+  
+  .button-container button {
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    font-size:15px;
+    background-color: #1e2835;
+    border-color: #404853;
+    cursor:pointer;
+    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
+    color: #fafafa;
+  }
+
+.items-container{
+  position: absolute;
+  justify-content: center;
+}
+
+/* These following lines will add the animation for the chicken image. It will move across the screen. Source = https://www.w3schools.com/css/css3_animations.asp*/
+@keyframes image-movement {
+  0%   {left:0px; top:0px;}
+  10%  {left:25px; top:50px;}
+  20%  { left:50px; top:25px;}
+  30%  {left:100px; top:0px;}
+  40%  {left:50px; top:50px;}
+  50%  { left:0px; top:25px;}
+  60%  {left:100px; top:50px;}
+  70%  {left:50px; top:50px;}
+  80%  { left:50px; top:50px;}
+  90%  {left:100px; top:50px;}
+  100% {left:0px; top:0px;}
+}
+
+.chicken-image{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  animation-name: image-movement;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;  
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  content: url("https://cdn.glitch.me/eae018e0-9530-4a94-9457-d6a89e8a4413%2Fthumbnails%2Fchicken.jpg?1636932201047");
+}
